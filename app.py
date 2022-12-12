@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def orders():
     data = pd.read_csv('orderdata.csv')
-    return data.to_html(index=False)
+    return data.to_html(index=False, index_names=False)
 
 # Run the app if it is the main module
 if __name__ == '__main__':
