@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     # Return the string "Hello, World!" to the user
-    return "Hello, World!"
+    return "Hello, World from GitHub!"
 
 # Run the app if it is the main module
 if __name__ == '__main__':
