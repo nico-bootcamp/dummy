@@ -1,7 +1,0 @@
-pandas==1.5.2
-numpy==1.23.4
-scikit-learn
-Flask==2.0.2
-Flask-Ext==0.1
-Flask-Extension==1.0
-Flask-Navigation==0.2.0
