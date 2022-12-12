@@ -7,9 +7,9 @@ app = Flask(__name__)
 
 # Define a route for the default URL
 @app.route('/')
-def hello():
-    orders = pd.read_csv('orderdata.csv')
-    return orders.to_html(index=False)
+def orders():
+    data = pd.read_csv('orderdata.csv')
+    return data.to_html(index=False)
 
 # Run the app if it is the main module
 if __name__ == '__main__':
