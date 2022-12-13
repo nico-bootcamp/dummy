@@ -9,7 +9,9 @@ app = Flask(__name__)
 @app.route('/')
 def orders():
     data = pd.read_csv('orderdata.csv')
-    return data.to_html(index=False, index_names=False)
+    header = "<html><title>Flask App</title><h1>Orders Table:</h1><body>"
+    footer = "</body></html>"
+    return header + data.to_html(index=False, index_names=False) + footer
 
 # Run the app if it is the main module
 if __name__ == '__main__':
